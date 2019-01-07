@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web components</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            --color-primary: #a4fcda;
+        }
+    </style>
+    <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
+</head>
+<body>
+    <p>
+        <wc-tooltip class="important" text="Web component tooltip text.">
+            <span class="highlight">Web Components</span>
+        </wc-tooltip>
+        are the best!
+    </p>
+    <wc-tooltip></wc-tooltip>
+    <div>Not in component</div>
+    <a is="wc-confirm-link" href="http://www.google.pl">Google</a>
+</body>
+</html>
